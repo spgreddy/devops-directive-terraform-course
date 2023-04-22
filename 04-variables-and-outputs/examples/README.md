@@ -69,3 +69,8 @@ instance_ip_addr = "172.31.24.95"
 ```
 
 Will be output after `terraform apply` or `terraform output`
+
+
+PS C:\personal\terraform\devops-directive-terraform-course\04-variables-and-outputs\examples> terraform apply -var="db_user=myuser" -var="db_pass=db_password"
+
+PS C:\personal\terraform\devops-directive-terraform-course\04-variables-and-outputs\examples> terraform destroy -var="db_user=myuser" -var="db_pass=db_password"

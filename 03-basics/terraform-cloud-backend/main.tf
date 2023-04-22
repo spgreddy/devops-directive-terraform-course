@@ -1,9 +1,9 @@
 terraform {
   backend "remote" {
-    organization = "devops-directive"
+    organization = "devops-project"
 
     workspaces {
-      name = "devops-directive-terraform-course"
+      name = "devops-project-terraform-course"
     }
   }
 

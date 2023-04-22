@@ -1,4 +1,4 @@
-# DevOps Directive Terraform Course
+# DevOps project Terraform Course
 
 This is the companion repo to: [Complete Terraform Course - From BEGINNER to PRO! (Learn Infrastructure as Code)](https://www.youtube.com/watch?v=7xngnjfIlK4)
 

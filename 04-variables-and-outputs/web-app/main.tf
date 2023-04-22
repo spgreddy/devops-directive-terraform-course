@@ -2,7 +2,7 @@ terraform {
   # Assumes s3 bucket and dynamo DB table already set up
   # See /code/03-basics/aws-backend
   backend "s3" {
-    bucket         = "devops-directive-tf-state"
+    bucket         = "devops-project-tf-state"
     key            = "04-variables-and-outputs/web-app/terraform.tfstate"
     region         = "us-east-1"
     dynamodb_table = "terraform-state-locking"
@@ -214,3 +214,6 @@ resource "aws_db_instance" "db_instance" {
   password            = var.db_pass
   skip_final_snapshot = true
 }
+
+# terraform apply -var="db_user=myuser" -var="db_pass=db_password"
+# terraform destroy -var="db_user=myuser" -var="db_pass=db_password"
